@@ -1,0 +1,105 @@
+/*
+ * Name: Ryan Crawford
+ * Date: May 19, 2026
+ * Purpose: Week 1 Project Submission - Demonstrating Inheritance and Composition 
+ * within the underlying logic for the 'RPG Character Vault' application.
+ */
+
+using System;
+
+namespace RPGCharacterVault
+{
+    // ---------------------------------------------------------
+    // 1. Component Class (Used to demonstrate composition later)
+    // ---------------------------------------------------------
+    public class Weapon
+    {
+        public string ItemName { get; set; }
+        public int DamageRating { get; set; }
+
+        public Weapon(string itemName, int damageRating)
+        {
+            ItemName = itemName;
+            DamageRating = damageRating;
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 2. Base Class (Setup for Inheritance)
+    // ---------------------------------------------------------
+    public class Character
+    {
+        public string CharacterName { get; set; }
+        
+        // DEMONSTRATING COMPOSITION: 
+        // The Character class does not inherit from Weapon, it "has a" Weapon object inside it.
+        public Weapon EquippedWeapon { get; set; } 
+
+        public Character(string characterName, Weapon weapon)
+        {
+            CharacterName = characterName;
+            EquippedWeapon = weapon;
+        }
+
+        public virtual void DisplayStats()
+        {
+            Console.WriteLine($"Character Name: {CharacterName}");
+            Console.WriteLine($"Equipped Weapon: {EquippedWeapon.ItemName} (Damage: {EquippedWeapon.DamageRating})");
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 3. Derived Class
+    // ---------------------------------------------------------
+    // DEMONSTRATING INHERITANCE: 
+    // The Mage class inherits properties and methods from the base Character class using the ':' operator.
+    public class Mage : Character 
+    {
+        public int TotalMana { get; set; }
+
+        public Mage(string characterName, Weapon weapon, int totalMana) : base(characterName, weapon)
+        {
+            TotalMana = totalMana;
+        }
+
+        public override void DisplayStats()
+        {
+            // Calls the base class method to print Name and Weapon
+            base.DisplayStats(); 
+            // Adds functionality specific to the derived class
+            Console.WriteLine($"Total Mana: {TotalMana}");
+        }
+    }
+
+    // ---------------------------------------------------------
+    // Main Application Execution
+    // ---------------------------------------------------------
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Displays an informative indicator that this is project week 1, assignment title, and name
+            Console.WriteLine("==================================================");
+            Console.WriteLine("Project Week 1: RPG Character Vault Base Logic");
+            Console.WriteLine("Developer: Ryan Crawford");
+            Console.WriteLine("==================================================\n");
+
+            // Displays a welcome message that gives the user some basic instructions
+            Console.WriteLine("Welcome to the RPG Character Vault Console Interface!");
+            Console.WriteLine("This module tests the character class structures before UI implementation.");
+            Console.WriteLine("Press 'Enter' to load the test character data...\n");
+            Console.ReadLine(); // Waits for user input
+
+            // Instantiates the classes with realistic information
+            Weapon archmageStaff = new Weapon("Staff of Magnus", 45);
+            Mage testPlayer = new Mage("Savos Aren", archmageStaff, 450);
+
+            // Displays the information stored in the classes
+            Console.WriteLine("--- CURRENT CHARACTER LOADOUT ---");
+            testPlayer.DisplayStats();
+            
+            Console.WriteLine("\nTesting complete. Press any key to exit the application.");
+            Console.ReadKey();
+        }
+    }
+}
