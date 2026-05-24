@@ -1,0 +1,15 @@
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\bin\Debug\net6.0\Project_Week_2.exe
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\bin\Debug\net6.0\Project_Week_2.deps.json
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\bin\Debug\net6.0\Project_Week_2.runtimeconfig.json
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\bin\Debug\net6.0\Project_Week_2.dll
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\bin\Debug\net6.0\Project_Week_2.pdb
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.csproj.AssemblyReference.cache
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.AssemblyInfoInputs.cache
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.AssemblyInfo.cs
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.csproj.CoreCompileInputs.cache
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.dll
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\refint\Project_Week_2.dll
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.pdb
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\Project_Week_2.genruntimeconfig.cache
+C:\Users\student\source\Ryan_Crawford_Project\Project_Week_1\Project_Week_2\obj\Debug\net6.0\ref\Project_Week_2.dll
